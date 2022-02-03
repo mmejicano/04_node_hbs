@@ -16,8 +16,7 @@
 10. request(peticion) ,response(respuesta)
 11. JSON.stringlify()
 12. Headers: content-type: application/json|csv
-13. DEPLOY requiere dotenv= .env + script start
-14. GIT: .gitignore + github
+13. GIT: .gitignore + github
 
 > _Handlebars does **not provide** a way to import or **extend a template**, but through the use of **helpers** you can create a similar result._
 
@@ -28,4 +27,28 @@ git checkout -- .
 git add .
 git rm package-lock.json --cached
 git status
+git log
+git branch
+git remote -v
+´´´
+
+### Deploy
+
+Deploy requiere dotenv= .env + script start
+
+Platforms:
+
+- firebase
+- aws
+- azure
+- google cloud
+- digitalocean
+- heroku: hasta 5 app free, duermen despues 30min inactividad
+
+Heroku cli commands
+´´´sh
+heroku --version
+heroku login
+heroku git:remote -a curso-node
+git push heroku
 ´´´
